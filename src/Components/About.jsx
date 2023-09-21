@@ -16,9 +16,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/workstation.jpg";
 
-const imageAltText = "purple and blue abstract background";
+const imageAltText = "background with a keyboard, coffee and cherry";
 
 /**
  * Sort description that expands on your title on the Home component.
@@ -30,14 +30,7 @@ const description =
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = [
-  "Mobile/Desktop application design",
-  "Backend using Java",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
-];
+const skillsList = ["Mobile/Desktop application design", "Backend using Java"];
 
 /**
  * Use this to give more information about what you are passionate about,
@@ -45,12 +38,12 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my software development experience, I continually look for new and better ways to make tech accessible by all.";
 
 const About = () => {
   return (
     <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+      <img className="background" src={image} alt={imageAltText} style={{ filter: "blur(4px)" }} />
       <div
         style={{
           backgroundColor: "white",
@@ -58,6 +51,7 @@ const About = () => {
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          borderRadius: "20px",
         }}
       >
         <h2>About Myself</h2>
